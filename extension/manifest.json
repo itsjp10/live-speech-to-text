@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Live Tab Transcription (Deepgram)",
+  "version": "0.1.0",
+  "description": "Transcribe a browser tab's audio (YouTube, meetings, etc.) to text in real time using Deepgram.",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabCapture", "offscreen"],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Live Tab Transcription"
+  }
+}
